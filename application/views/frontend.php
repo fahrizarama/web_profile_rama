@@ -379,6 +379,8 @@
 
 	<!-- loading -->
 
+
+
 	<!-- preloader bulat -->
 	<!-- <div id="preloader"></div> -->
 	<script>
@@ -387,6 +389,11 @@
 				preloaderFinish();
 			}, 3000);
 		};
+
+		function preloaderFinish() {
+			var preloader = document.getElementById("preloader");
+			preloader.classList.add("loaded");
+		}
 	</script>
 	<!-- preloader line -->
 	<div id="preloader">

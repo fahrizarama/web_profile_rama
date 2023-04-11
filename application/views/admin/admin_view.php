@@ -4,11 +4,11 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta charset="utf-8" />
-    <title>Admin Website Profile Ferndes</title>
+    <title>Admin Website Profile Fahriza</title>
 
     <meta name="description" content="top menu &amp; navigation" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>assetsadmin/img/favicon-elecomp.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assetsadmin/img/favicon.png" type="image/x-icon" />
 
     <!-- bootstrap & fontawesome -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assetsadmin/css/bootstrap.css" />
@@ -161,7 +161,7 @@
                 <!-- #section:basics/navbar.layout.brand -->
                 <a href="#" class="navbar-brand">
                     <small>
-                        Admin Website Profile Fernandes
+                        Admin Website Profile Fahriza.rama
                     </small>
                 </a>
 

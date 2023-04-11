@@ -126,6 +126,19 @@ a:hover {
   background-color: #fff;
 }
 
+#preloader.loaded {
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #preloader:before,
 #preloader:after {
   content: "";

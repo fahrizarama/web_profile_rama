@@ -36,7 +36,7 @@
 	<li class="hover">
 		<a href="<?php echo base_url('Admin_pengalaman') ?>">
 			<i class="menu-icon fa fa-list-alt"></i>
-			<span class="menu-text"> Pengalaman Mengajar </span>
+			<span class="menu-text"> Pengalaman </span>
 
 			<b class="arrow fa fa-angle-down"></b>
 		</a>
@@ -55,6 +55,14 @@
 		<a href="<?php echo base_url('Admin_pekerjaan') ?>">
 			<i class="menu-icon fa fa-check-circle"></i>
 			<span class="menu-text"> Pekerjaan </span>
+
+			<b class="arrow fa fa-angle-down"></b>
+		</a>
+	</li>
+	<li class="hover">
+		<a href="<?php echo base_url('Admin_pekerjaan') ?>">
+			<i class="menu-icon fa fa-search-location"></i>
+			<span class="menu-text"> Alamat </span>
 
 			<b class="arrow fa fa-angle-down"></b>
 		</a>
