@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assetsadmin/img/favicon.png" type="image/x-icon" />
 
     <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assetsadmin/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assetsadmin/css/font-awesome.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assetsadmin/css/all.css" />

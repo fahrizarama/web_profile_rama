@@ -61,7 +61,8 @@
 	</li>
 	<li class="hover">
 		<a href="<?php echo base_url('Admin_pekerjaan') ?>">
-			<i class="menu-icon fa fa-search-location"></i>
+			<i class="menu-icon fa-sharp fa-light fa-map" style="color: #000000;"></i>
+			<!-- <i class="menu-icon fa fa-pencil-square-o"></i> -->
 			<span class="menu-text"> Alamat </span>
 
 			<b class="arrow fa fa-angle-down"></b>
