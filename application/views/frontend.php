@@ -8,53 +8,37 @@
 	<meta content="" name="keywords">
 	<meta content="" name="description">
 
-	<!-- Favicons -->
+
 	<link href="<?php echo base_url(); ?>assetsfront/img/favicon.png" rel="icon">
 	<link href="<?php echo base_url(); ?>assetsfront/css/aos.css ">
 	<link href="<?php echo base_url(); ?>assetsfront/img/apple-touch-icon.png" rel="apple-touch-icon">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<!-- Bootstrap CSS File -->
+
 	<link href="<?php echo base_url(); ?>assetsfront/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Libraries CSS Files -->
+
 	<link href="<?php echo base_url(); ?>assetsfront/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>assetsfront/lib/animate/animate.min.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>assetsfront/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>assetsfront/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>assetsfront/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-	<!-- Main Stylesheet File -->
+
+
 	<link href="<?php echo base_url(); ?>assetsfront/css/style.css" rel="stylesheet">
 
-	<!-- =======================================================
-    Theme Name: DevFolio
-    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-
-</head>
-
-<!-- <style>
-	.row {
-		width: 100%;
-		height: 100%;
-		margin: 50px auto;
-		padding-top: 75px;
-		background: #ccc;
-		text-align: center;
-		color: #FFF;
-		font-size: 3em;
-	}
-</style> -->
 
 <body id="page-top">
 
-	<!--/ Nav Star /-->
+
 	<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
 		<div class="container">
-			<a class="navbar-brand js-scroll" href="#page-top"><?= $beranda->judul_menu ?></a>
+			<a class="navbar-brand js-scroll" href="#page-top">
+				<img src="<?php echo base_url(); ?>assets/img/logo2.png" alt="Logo" width="40" height="40">
+				<?= $beranda->judul_menu ?>
+			</a>
+
 			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
 				<span></span>
 				<span></span>
@@ -89,10 +73,10 @@
 		<div class="intro-content display-table">
 			<div class="table-cell">
 				<div class="container">
-					<!--<p class="display-6 color-d">Hello, world!</p>-->
+
 					<h1 class="intro-title mb-4"><?= $beranda->judul_beranda ?></h1>
 					<p class="intro-subtitle"><span class="text-slider-items"><?= $beranda->deskripsi_beranda ?></span><strong class="text-slider"></strong></p>
-					<!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#contact" role="button">Hubungi Saya</a></p> -->
+					<p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#hubungi" role="button">Hubungi Saya</a></p>
 				</div>
 			</div>
 		</div>
@@ -159,13 +143,8 @@
 													</a>
 													<a href="https://drive.google.com/file/d/18RiZaLCp5Df43Ug6sYg4Wjsni0DmwxhI/view?usp=sharing" target="blank" class="btn btn-primary col-md-12">Lihat CV</a>
 												</div>
-
 											</div>
 										</div>
-										<!-- end coba foto -->
-
-										<!-- <embed src="<?php echo base_url(); ?>assets/img/<?= $biodata->cv ?>" type="application/pdf" width=100% height="300"></embed> -->
-										<!-- <a href="https://drive.google.com/file/d/18RiZaLCp5Df43Ug6sYg4Wjsni0DmwxhI/view?usp=sharing" target="blank" class="btn btn-primary ">Lihat CV</a> -->
 									</div>
 								</div>
 							</div>
@@ -228,10 +207,10 @@
 				<div class="col-sm-12">
 					<div class="title-box text-center">
 						<h3 class="title-a">
-							Artikel
+							Project
 						</h3>
 						<p class="subtitle-a">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Project Website / Mobile / Design
 						</p>
 						<div class="line-mf"></div>
 					</div>
@@ -276,7 +255,7 @@
 	</section>
 
 	<!--/ Section Contact-Footer Star /-->
-	<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+	<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route">
 		<div class="overlay-mf"></div>
 		<div class="container">
 			<div class="row">
@@ -291,12 +270,12 @@
 										</h5>
 									</div>
 									<div>
-										<div class="col-lg-6">
-											<?= $kontak->script_embed_code ?>
+										<div class="map-container">
+											<iframe src="<?= $kontak->script_embed_code ?>" width="100%" height="450" style="border:0; max-width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6" id="hubungi">
 									<div class="title-box-2 pt-4 pt-md-0">
 										<h5 class="title-left">
 											Hubungi Saya
@@ -347,12 +326,13 @@
 
 	<!--/ Section Contact-footer End /-->
 
+
 	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
 
 	<!-- loading -->
-
-
 
 	<!-- preloader bulat -->
 	<!-- <div id="preloader"></div> -->

@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Remove Tap Highlight on Windows Phone IE -->
     <meta name="msapplication-tap-highlight" content="no" />
-    <title>Admin Web Royal Hit Property</title>
+    <title>Admin Web Fahriza Rama</title>
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon-elecomp.png" type="image/x-icon" />
     <link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>assetslogin/assets/images/favicon.png">
 

@@ -7,7 +7,7 @@
 			</h1>
 		</div><!-- /.page-header -->
 
-		<div class='alert alert-success' id='berhasil'><i class='fa fa-home'>&nbsp;</i>Selamat Datang Di Admin Website Profile Fernandes</div>
+		<div class='alert alert-success' id='berhasil'><i class='fa fa-home'>&nbsp;</i>Selamat Datang Di Admin Website Profile Fahriza</div>
 	</section>
 </div>
 <!-- ------------------------------------ ISI DIBAWAH ------------------------------------------ -->

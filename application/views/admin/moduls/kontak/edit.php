@@ -21,13 +21,12 @@ defined('BASEPATH') or die('No direct script access allowed!');
 
                     <div class="col-md-12">
                         <label>Script Embed Code</label>
-                        <textarea class="form-control" name="script_embed_code" placeholder="Script Embed Code"><?= $data->script_embed_code ?></textarea>
-                        <text type="text" class="form-control" name="script_embed_code" placeholder="Script Embed Code" value="<?= $data->script_embed_code ?>" required>
+                        <textarea class="form-control" name="script_embed_code"><?= $data->script_embed_code ?></textarea>
                     </div>
 
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class=" modal-footer">
                 <button type="button" class="btn btn-danger btn-sm pull-right" data-dismiss="modal">Cancel</button>
 
                 <button type="submit" class="btn btn-success btn-sm pull-right" style="margin-right: 5px;">Submit</button>
