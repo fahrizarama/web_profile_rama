@@ -4,47 +4,32 @@ defined('BASEPATH') or die('No direct script access allowed!');
 
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
-        <form class="form-horizontal" role="form" id="formEditPengalaman" action="<?= base_url('Admin_pekerjaan/edit_produk') ?>" method="POST" enctype="multipart/form-data">
+        <form class="form-horizontal" role="form" id="formEditPengalaman" action="<?= base_url('Admin_kontak/edit_produk') ?>" method="POST" enctype="multipart/form-data">
             <input type="reset" class="hidden">
-            <input type="hidden" name="id_pekerjaan" value="<?= $data->id_pekerjaan ?>">
+            <input type="hidden" name="id_kontak" value="<?= $data->id_kontak ?>">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="smaller lighter blue no-margin">Edit Pekerjaan</h3>
+                <h3 class="smaller lighter blue no-margin">Edit Kontak</h3>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="alert alert-warning text-center">
-                        <!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
-                        <strong>Peringatan!</strong><br>
-                        Max Dimension : 800 x 533 (px)<br>
-                        Allowed Image : JPG | PNG
-                    </div>
-
 
                     <div class="col-md-12">
-                        <label>Nama Pekerjaan</label>
-                        <input type="text" class="form-control" name="nama_pekerjaan" placeholder="Nama Pekerjaan" value="<?= $data->nama_pekerjaan ?>" required>
+                        <label>Deskripsi Kontak</label>
+                        <textarea class="form-control" name="deskripsi_kontak" id="edit_input_deskripsi" placeholder="Deskripsi Kontak"><?= $data->deskripsi_kontak ?></textarea>
                     </div>
 
                     <div class="col-md-12">
-                        <label>Logo</label>
-                        <input type="file" class="form-control" name="logo" id="edit_input_foto5">
-                    </div>
-
-                    <div class="col-md-12">
-                        <label>Deskripsi</label>
-                        <textarea class="form-control" name="deskripsi" id="edit_input_deskripsi" placeholder="Deskripsi"><?= $data->deskripsi ?></textarea>
-                    </div>
-
-                    <div class="col-md-12">
-                        <label>Link</label>
-                        <input type="text" class="form-control" name="link" placeholder="Link" value="<?= $data->link ?>" required>
+                        <label>Script Embed Code</label>
+                        <textarea class="form-control" name="script_embed_code" placeholder="Script Embed Code"><?= $data->script_embed_code ?></textarea>
+                        <text type="text" class="form-control" name="script_embed_code" placeholder="Script Embed Code" value="<?= $data->script_embed_code ?>" required>
                     </div>
 
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger btn-sm pull-right" data-dismiss="modal">Cancel</button>
+
                 <button type="submit" class="btn btn-success btn-sm pull-right" style="margin-right: 5px;">Submit</button>
             </div>
         </form>

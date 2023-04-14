@@ -25,6 +25,11 @@ class Frontend_m extends CI_Model
 		return $this->db->get('pekerjaan');
 	}
 
+	public function kontak()
+	{
+		return $this->db->get('alamat');
+	}
+
 	public function artikel()
 	{
 		return $this->db->query('SELECT * FROM `artikel` ,kategori_artikel WHERE artikel.id_kategori = kategori_artikel.id_kategori');

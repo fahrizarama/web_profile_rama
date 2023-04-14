@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or die('No direct script access allowed!');
 ?>
-<?php $title = "<i class='fa fa-pencil-square-o'></i>&nbsp;Pekerjaan"; ?>
+<?php $title = "<i class='fa fa-pencil-square-o'></i>&nbsp;Kontak"; ?>
 <div>
     <section class="content">
         <div class="page-header">
@@ -16,46 +16,29 @@ defined('BASEPATH') or die('No direct script access allowed!');
 <div class="row">
     <div class="col-md-12">
         <div style="padding-bottom: 10px;">
-            <a href="#tambahproduk" role="button" class="btn btn-primary" data-toggle="modal">Tambah Pekerjaan</a>
+            <a href="#tambahproduk" role="button" class="btn btn-primary" data-toggle="modal">Tambah Kontak</a>
         </div>
 
         <div id="tambahproduk" class="modal fade" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form class="form-horizontal" role="form" id="formAddPengalaman" action="<?= base_url(uri_string() . '/add_pekerjaan') ?>" method="POST" enctype="multipart/form-data">
+                    <form class="form-horizontal" role="form" id="formAddPengalaman" action="<?= base_url(uri_string() . '/add_kontak') ?>" method="POST" enctype="multipart/form-data">
                         <input type="reset" class="hidden">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h3 class="smaller lighter blue no-margin">Tambah Pekerjaan</h3>
+                            <h3 class="smaller lighter blue no-margin">Tambah Kontak</h3>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="alert alert-warning text-center">
-                                    <!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
-                                    <strong>Peringatan!</strong><br>
-                                    Max Dimension : 800 x 533 (px)<br>
-                                    Allowed Image : JPG | PNG
-                                </div>
-
 
                                 <div class="col-md-12">
-                                    <label>Nama Pekerjaan</label>
-                                    <input type="text" class="form-control" name="nama_pekerjaan" placeholder="Nama Pekerjaan" required>
+                                    <label>Deskripsi Kontak</label>
+                                    <textarea class="form-control" name="deskripsi_kontak" id="input_deskripsi" placeholder="Deskripsi Kontak"></textarea>
                                 </div>
 
                                 <div class="col-md-12">
-                                    <label>Logo</label>
-                                    <input type="file" class="form-control" name="logo" id="input_foto5" required>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <label>Deskripsi</label>
-                                    <textarea class="form-control" name="deskripsi" id="input_deskripsi" placeholder="Deskripsi"></textarea>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <label>Link</label>
-                                    <input type="text" class="form-control" name="link" placeholder="Link" required>
+                                    <label>Script Embed Code</label>
+                                    <input type="text" class="form-control" name="script_embed_code" placeholder="Script Embed Code" required>
                                 </div>
 
                             </div>
@@ -72,10 +55,11 @@ defined('BASEPATH') or die('No direct script access allowed!');
         <table class="table table-striped table-bordered table-hover" id="datatablesPengalaman">
             <thead>
                 <th>No</th>
-                <th>Nama Pekerjaan</th>
-                <th>Logo</th>
-                <th>Deskripsi</th>
-                <th>Link</th>
+                <th>Deskripsi Kontak</th>
+                <th>Script Embed Code</th>
+                <th>Email Kontak</th>
+                <th>Nomor Kontak</th>
+                <th>Domisili</th>
                 <th>Action</th>
             </thead>
 
@@ -86,20 +70,18 @@ defined('BASEPATH') or die('No direct script access allowed!');
                     foreach ($result as $key => $value) { ?>
                         <tr>
                             <td><?= $start++ ?></td>
-                            <td><?= $value->nama_pekerjaan ?></td>
-                            <td class="text-center">
-                                <?php if ($value->logo) { ?>
-                                    <img src="<?= base_url('assets/img/' . $value->logo) ?>" width="100">
-                                <?php } ?>
-                            </td>
-                            <td><?= $value->deskripsi ?></td>
-                            <td><?= $value->link ?></td>
+                            <td><?= $value->deskripsi_kontak ?></td>
+                            <td><?= $value->script_embed_code ?></td>
+                            <td><?= $biodata->email ?></td>
+                            <td><?= $biodata->telp ?></td>
+                            <td><?= $biodata->domisili ?></td>
+
                             <td>
-                                <!-- <a href="<?php echo site_url('Admin_artikel/edit/' .  $value->id_pekerjaan) ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Edit</a> | -->
-                                <button type="button" class="btn btn-primary btn-xs" onclick="edit_produk('<?= $value->id_pekerjaan ?>')">
+                                <!-- <a href="<?php echo site_url('Admin_artikel/edit/' .  $value->id_kontak) ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Edit</a> | -->
+                                <button type="button" class="btn btn-primary btn-xs" onclick="edit_produk('<?= $value->id_kontak ?>')">
                                     <i class="fa fa-edit"> Edit</i>
                                 </button>
-                                <button type="button" class="btn btn-danger btn-xs" onclick="delete_produk('<?= $value->id_pekerjaan ?>')">
+                                <button type="button" class="btn btn-danger btn-xs" onclick="delete_produk('<?= $value->id_kontak ?>')">
                                     <i class="fa fa-trash"> Hapus</i>
                                 </button>
                             </td>

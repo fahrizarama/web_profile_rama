@@ -26,7 +26,7 @@
 
 	<li class="hover">
 		<a href="<?php echo base_url('Admin_keahlian') ?>">
-			<i class="menu-icon fa fa-hand-o-up"></i>
+			<i class="menu-icon fa fa-check-circle"></i>
 			<span class="menu-text"> Keahlian </span>
 
 			<b class="arrow fa fa-angle-down"></b>
@@ -36,34 +36,16 @@
 	<li class="hover">
 		<a href="<?php echo base_url('Admin_pengalaman') ?>">
 			<i class="menu-icon fa fa-list-alt"></i>
-			<span class="menu-text"> Pengalaman </span>
+			<span class="menu-text"> Riwayat Pengalaman </span>
 
 			<b class="arrow fa fa-angle-down"></b>
 		</a>
 	</li>
 
 	<li class="hover">
-		<a href="<?php echo base_url('Admin_sertifikasi') ?>">
-			<i class="menu-icon fa fa-check-circle"></i>
-			<span class="menu-text"> Sertifikasi </span>
-
-			<b class="arrow fa fa-angle-down"></b>
-		</a>
-	</li>
-
-	<li class="hover">
-		<a href="<?php echo base_url('Admin_pekerjaan') ?>">
-			<i class="menu-icon fa fa-check-circle"></i>
-			<span class="menu-text"> Pekerjaan </span>
-
-			<b class="arrow fa fa-angle-down"></b>
-		</a>
-	</li>
-	<li class="hover">
-		<a href="<?php echo base_url('Admin_pekerjaan') ?>">
-			<i class="menu-icon fa-sharp fa-light fa-map" style="color: #000000;"></i>
-			<!-- <i class="menu-icon fa fa-pencil-square-o"></i> -->
-			<span class="menu-text"> Alamat </span>
+		<a href="<?php echo base_url('Admin_kontak') ?>">
+			<i class="menu-icon fa fa-hand-o-up"></i>
+			<span class="menu-text"> Kontak </span>
 
 			<b class="arrow fa fa-angle-down"></b>
 		</a>
